@@ -76,15 +76,15 @@ range_slider = dcc.RangeSlider(
     marks={i: str(i) for i in range(1952, 2012, 5)},
 )
 
-app = dash.Dash(external_stylesheets=[dbc.themes.DARKLY])
-app.layout = html.Div([html.H1('Gap Minder Analysis of Germany', style={'textAlign': 'center', 'color': '#636EFA'}), 
-                       html.Div(html.P("Using the gapminder data we take a look at Germany's profile"), 
-                                style={'marginLeft': 50, 'marginRight': 25}),
-                       html.Div([html.Div('Germany', 
-                                          style={'backgroundColor': '#636EFA', 'color': 'white', 
-                                                 'width': '900px', 'marginLeft': 'auto', 'marginRight': 'auto'}),
-                                 table, range_slider, dropdown, graph1,  graph2, graph3])
-                      ])
+#app = dash.Dash(external_stylesheets=[dbc.themes.DARKLY])
+# app.layout = html.Div([html.H1('Gap Minder Analysis of Germany', style={'textAlign': 'center', 'color': '#636EFA'}), 
+#                        html.Div(html.P("Using the gapminder data we take a look at Germany's profile"), 
+#                                 style={'marginLeft': 50, 'marginRight': 25}),
+#                        html.Div([html.Div('Germany', 
+#                                           style={'backgroundColor': '#636EFA', 'color': 'white', 
+#                                                  'width': '900px', 'marginLeft': 'auto', 'marginRight': 'auto'}),
+#                                  table, range_slider, dropdown, graph1,  graph2, graph3])
+#                       ])
 
 # Output(component_id='my-output', component_property='children'),
 # Input(component_id='my-input', component_property='value')
